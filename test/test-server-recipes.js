@@ -45,7 +45,7 @@ describe("Recipe List", function() {
       .request(app)
       .get("/recipes")
       .then(function(res) {
-        expect(res).to.have.status(200);
+        expect(res).to.have.status(204);
         expect(res).to.be.json;
         expect(res.body).to.be.a("array");
 
